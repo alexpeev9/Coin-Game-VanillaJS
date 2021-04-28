@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flip a coin</title>
     <link rel="stylesheet" href="./assets/css/index.css">
-    <script src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
 </head>
 <body>
-    <button onclick="flip()"> Flip</button>
+    <div class='container'>
+        <div id="coin" class=''>
+          <div id="head" class="head"></div>
+          <div id="tail" class="tail"></div>
+        </div>
+        <button id="flip">Click</button>
+    </div>
 </body>
 </html>
