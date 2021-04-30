@@ -1,3 +1,4 @@
+// Здравей!
 const coin = document.querySelector('#coin');
 const button = document.getElementsByClassName('flipButton')[0];
 const resultText = document.getElementById('status');
