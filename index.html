@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flip a coin</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/coin.css">
     <script type="module" src="./assets/js/index.js"></script>
 </head>
-<body>
-    <div class='container'>
-        <div id="coin" class=''>
-          <div id="head" class="head"></div>
-          <div id="tail" class="tail"></div>
-        </div>
-        <p id="status">&nbsp;</p>
-        <p id="winnerMessage">&nbsp;</p>
-    </div>
 
-    <div class="row">
-        <div class="column">
-            <h3>User 1</h3>
-            <div class="buttonDiv">
-                <button id="user1Head" class="userButton1" >Head</button>
-                <button id="user1Tail" class="userButton1" >Tail</button>
+<body>
+    <div class="main">
+        <div class='container'>
+            <div id="coin" class=''>
+                <div id="head" class="head"></div>
+                <div id="tail" class="tail"></div>
             </div>
-            <div>
-                <p>Wins: <a id="score1wins">0</a></p>
-                <p>Loses: <a id="score1loses">0</a></p>
+            <p id="status">&nbsp;</p>
+            <p id="winnerMessage">&nbsp;</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h3>User 1</h3>
+                <div class="buttonDiv">
+                    <button id="user1Head" class="userButton1">Head</button>
+                    <button id="user1Tail" class="userButton1">Tail</button>
+                </div>
+                <div>
+                    <p>Wins: <a id="score1wins">0</a></p>
+                    <p>Loses: <a id="score1loses">0</a></p>
+                </div>
+            </div>
+            <div class="middle-column">
+                <button class="flipButton">Click</buttoN>
+            </div>
+            <div class="column">
+                <h3>User 2</h3>
+                <div class="buttonDiv">
+                    <button id="user2Head" class="userButton2">Head</button>
+                    <button id="user2Tail" class="userButton2">Tail</button>
+                </div>
+                <div>
+                    <p>Wins: <a id="score2wins">0</a></p>
+                    <p>Loses: <a id="score2loses">0</a></p>
+                </div>
             </div>
         </div>
-        <div class="middle-column">
-            <button class="flipButton">Click</buttoN>
-        </div>
-        <div class="column">
-            <h3>User 2</h3>
-            <div class="buttonDiv">
-                <button id="user2Head" class="userButton2" >Head</button>
-                <button id="user2Tail" class="userButton2" >Tail</button>
-            </div>
-            <div>
-                <p>Wins: <a id="score2wins">0</a></p>
-                <p>Loses: <a id="score2loses">0</a></p>
-            </div>
-        </div>
+    </div>
+    <div class="errorMessage">
+        <p>
+            The Site doesn't support this resolution.
+        </p>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,47 @@
+#coin {
+	position: relative;
+	/*we can type what we want for width,height it is independent*/
+	width: 20rem;
+	height: 20rem;
+	margin: 2rem 0rem;
+	transform-style: preserve-3d; /* how head and tail is rendered */ 
+}
+#coin div {
+	width: 100%;
+	height: 100%;
+	background-size: contain; /* to fill in circle shape */
+	position: absolute; /* to be on the same spot */
+}
+.head {
+	background-image: url("../img/Head.png");
+}
+.animate-head {
+	animation: flipHead 3s;
+	animation-fill-mode: forwards; /* we want to stop when animation stops */
+}
+.tail {
+	background-image: url("../img/Tail.png");
+	transform: rotateY(-180deg); /* tail is on other side of coin */
+}
+.animate-tail {
+	animation: flipTail 3s;
+	animation-fill-mode: forwards; /* we want to stop when animation stops */
+}
+@keyframes flipHead { 
+	from {
+		transform: rotateY(0deg); /* starts from here */
+	}
+	to { 
+		/* how many times we want to rotate */  
+		transform: rotateY(1800deg); /* we want it 10 times to fall on heads */  
+	}
+}
+@keyframes flipTail {
+	from {
+		transform: rotateY(0deg); /* starts from here */
+	}
+	to {
+		transform: rotateY(1620deg); /* 9 times because we subtract from .tail which is -180*/
+
+	}
+}

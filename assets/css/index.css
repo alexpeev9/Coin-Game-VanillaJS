@@ -1,7 +1,7 @@
 /* for 2 columns */
 body{
     background-color: #242121;
-    color: #F8F3E3;
+    color: #F8C25C;
 }
 .userButtons{
 	color: green;
@@ -16,6 +16,17 @@ body{
 	width: 40%;
 	padding: 10px;
 }
+
+.buttonDiv{
+    display: inline-block;
+}
+button {
+    display:inline-block;
+	padding: 1rem;
+	background-color: #F8C25C;
+	color: #242121;
+	width: 5rem;
+}
 .flipButton{
 	display: none;
 	margin: 0;
@@ -24,15 +35,6 @@ body{
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-}
-.buttonDiv{
-    display: inline-block;
-	justify-content:right;
-}
-button {
-    display:inline-block;
-	padding: 1rem;
-	background-color: #F8C25C;
 }
 .row{
 	display: flex;
@@ -43,47 +45,17 @@ button {
 	flex-direction: column;
 	align-items: center;
 }
-#coin {
-	position: relative;
-	width: 20rem;
-	height: 20rem;
-	margin: 2rem 0rem;
-	transform-style: preserve-3d;
+.errorMessage{
+	display: none;
 }
-#coin div {
-	width: 100%;
-	height: 100%;
-	background-size: contain;
-	position: absolute;
-}
-.head {
-	background-image: url("../img/Head.png");
-}
-.animate-head {
-	animation: flipHead 3s;
-	animation-fill-mode: forwards;
-}
-.tail {
-	background-image: url("../img/Tail.png");
-	transform: rotateY(-180deg);
-}
-.animate-tail {
-	animation: flipTail 3s;
-	animation-fill-mode: forwards;
-}
-@keyframes flipHead {
-	from {
-		transform: rotateY(0deg);
+
+@media only screen and (max-width: 300px) {
+	.main{
+		display: none;
 	}
-	to {
-		transform: rotateY(1800deg);
-	}
-}
-@keyframes flipTail {
-	from {
-		transform: rotateY(0deg);
-	}
-	to {
-		transform: rotateY(1620deg);
+	.errorMessage{
+		text-align: center;
+		color: #F8C25C;
+		display: block;
 	}
 }

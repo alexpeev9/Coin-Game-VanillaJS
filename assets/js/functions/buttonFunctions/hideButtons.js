@@ -3,7 +3,6 @@ import {button} from '../../elements/htmlElements.js'
 import {count,countModify} from '../../elements/variables.js'
 function hideButtons(player,input){
     player.chosenSide = input.textContent;
-    // input.id - id
     htmlElementToArray(document.getElementsByClassName(input.className)).forEach(element => { 
         changeColorRed(element);
         changePointEventNone(element);
