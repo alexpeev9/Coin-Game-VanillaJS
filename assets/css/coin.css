@@ -13,14 +13,16 @@
 	position: absolute; /* to be on the same spot */
 }
 .head {
-	background-image: url("../img/Head.png");
+	/* background-image: url("../img/Head.png"); */
+	background-image: url("https://i.imgur.com/s886KZx.png");
 }
 .animate-head {
 	animation: flipHead 3s;
 	animation-fill-mode: forwards; /* we want to stop when animation stops */
 }
 .tail {
-	background-image: url("../img/Tail.png");
+	/* background-image: url("../img/Tail.png"); */
+	background-image: url("https://i.imgur.com/A1cMFNT.png");
 	transform: rotateY(-180deg); /* tail is on other side of coin */
 }
 .animate-tail {
