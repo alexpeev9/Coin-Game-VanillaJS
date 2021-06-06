@@ -1,6 +1,5 @@
 import {coin,button} from '../../elements/htmlElements.js'
 import {changeColorRed,changeDisplayNone} from '../buttonFunctions/htmlFunctions.js'
-import {deferFn} from './waitSeconds.js'
 import {processResult} from '../userFunctions/resultProcess.js'
 function flipCoin() {
     changeDisplayNone(button);
@@ -12,4 +11,9 @@ function flipCoin() {
         deferFn(processResult.bind(null, result), 2900);
     }, 100);
 }
+
+function deferFn(callback, ms) {
+    setTimeout(callback, ms);
+}
+
 export {flipCoin}

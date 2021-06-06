@@ -1,10 +1,10 @@
 // Colors
 function changeColorYellow(element){
-    element.style.backgroundColor = "yellow";
+    element.style.backgroundColor = "#F8C25C";
 }
 
 function changeColorRed(element){
-    element.style.backgroundColor = "red";
+    element.style.backgroundColor = "#FF2047";
 }
 
 // PointEvent
@@ -29,5 +29,4 @@ function changeDisplayBlock(element){
 function htmlElementToArray(element){
     return Array.from(element);
 }
-
 export {changeColorYellow,changeColorRed,changePointEventNone,changePointEventAuto,changeDisplayNone,changeDisplayBlock,htmlElementToArray}

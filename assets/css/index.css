@@ -1,19 +1,17 @@
 /* for 2 columns */
 body{
-    background-color: black;
-    color: white;
+    background-color: #242121;
+    color: #F8F3E3;
 }
 .userButtons{
 	color: green;
 }
 .column {
     text-align: center;
-	float: left;
 	width: 40%;
 	padding: 10px;
 }
 .middle-column{
-	float: left;
 	position: relative;
 	width: 40%;
 	padding: 10px;
@@ -34,7 +32,7 @@ body{
 button {
     display:inline-block;
 	padding: 1rem;
-	background-color: yellow;
+	background-color: #F8C25C;
 }
 .row{
 	display: flex;
