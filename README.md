@@ -1,4 +1,5 @@
 ![Picture 1](https://media1.tenor.com/images/acbbb3e80901dacf702a58f37784a2a3/tenor.gif)
+Link to the site: https://alexpeev9.github.io/Coin-Game-VanillaJS/
 # Summary:
 This is a game that allows 2 players to play "Head or Tails". The first user chooses his decision head or tail and chooses the corresponding button. Then his buttons are locked (marked with red) and he can't change his choice. The same is done with the 2nd user - User 2. After the 2 users have picked their choice, there is a button "Click" in the center of the screen. After clicking it, the coin starts spinning. Then the coin stops spinning, the result is displayed on the screen.
 Each player gets a win or lose point. After 5 rounds the winner is decided and the game starts again.
